@@ -77,6 +77,18 @@ export const projects: Project[] = [
     category: 'Angular',
     featured: true,
   },
+  {
+    id: '4',
+    title: 'Personal Finance Dashboard',
+    description:
+      'Responsive expense dashboard concept with salary planning, yearly savings goal tracking, Recharts visualizations, and Zustand-powered state for clean, scalable data flow.',
+    techStack: ['React', 'TypeScript', 'Zustand', 'Recharts', 'Responsive UI'],
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    githubUrl: 'https://github.com/Santhosh-SRK',
+    liveUrl: '',
+    category: 'React',
+    featured: true,
+  },
 ];
 
 export const experiences: Experience[] = [

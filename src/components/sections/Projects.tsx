@@ -14,7 +14,7 @@ const Projects = () => {
     >
       <Grid container spacing={3}>
         {featuredProjects.map((project, index) => (
-          <Grid key={project.id} size={{ xs: 12, md: 4 }}>
+          <Grid key={project.id} size={{ xs: 12, md: 6 }}>
             <ProjectCard project={project} index={index} />
           </Grid>
         ))}
