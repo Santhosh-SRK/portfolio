@@ -4,6 +4,8 @@ import DownloadIcon from '@mui/icons-material/Download';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { profile } from '../../content/portfolio';
 
+const profilePhoto = '/portfolio/profile-photo.png';
+
 const easeOut = [0, 0, 0.2, 1] as const;
 
 const fadeUp = (delay = 0) => ({
@@ -128,19 +130,17 @@ const Hero = () => {
             }}
           >
             <Avatar
+              src={profilePhoto}
+              alt={profile.name}
               sx={{
                 width: { xs: 180, md: 260 },
                 height: { xs: 180, md: 260 },
                 border: '4px solid',
                 borderColor: 'primary.main',
-                fontSize: '4.5rem',
-                fontWeight: 700,
-                background: 'linear-gradient(135deg, rgba(108,99,255,0.2), rgba(255,101,132,0.2))',
-                color: 'text.primary',
+                backgroundColor: 'background.paper',
+                objectFit: 'cover',
               }}
-            >
-              SK
-            </Avatar>
+            />
           </Box>
         </motion.div>
       </Box>
