@@ -45,7 +45,7 @@ export const projects: Project[] = [
     id: '1',
     title: 'Budget Tracker Dashboard',
     description:
-      'Responsive personal finance dashboard with salary planning, savings goals, Recharts analytics, and Zustand-based state designed for scalable product UI.',
+      'Enterprise-style finance dashboard with KPI cards, planning controls, activity feed, and Recharts analytics powered by Zustand for clean scalable state flow.',
     techStack: ['React', 'TypeScript', 'Zustand', 'Recharts', 'MUI'],
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
     githubUrl: 'https://github.com/Santhosh-SRK/budget-tracker-dashboard',
