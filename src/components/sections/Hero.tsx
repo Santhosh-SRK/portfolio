@@ -106,6 +106,15 @@ const Hero = () => {
               >
                 Download CV
               </Button>
+              <Button
+                variant="text"
+                size="large"
+                href={profile.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View GitHub
+              </Button>
             </Stack>
           </motion.div>
         </Box>

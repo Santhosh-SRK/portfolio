@@ -13,8 +13,8 @@ const Contact = () => {
     { icon: <EmailIcon />, label: profile.email, href: `mailto:${profile.email}` },
     { icon: <PhoneIcon />, label: profile.phone, href: `tel:${profile.phone}` },
     { icon: <LocationOnIcon />, label: profile.location },
-    { icon: <GitHubIcon />, label: 'GitHub', href: profile.githubUrl || undefined },
-    { icon: <LinkedInIcon />, label: 'LinkedIn', href: profile.linkedInUrl || undefined },
+    { icon: <GitHubIcon />, label: profile.githubUrl, href: profile.githubUrl || undefined },
+    { icon: <LinkedInIcon />, label: profile.linkedInUrl, href: profile.linkedInUrl || undefined },
   ].filter((item) => item.label);
 
   return (
@@ -45,7 +45,12 @@ const Contact = () => {
                     href={item.href}
                     target={item.href.startsWith('http') ? '_blank' : undefined}
                     rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    sx={{ color: 'text.secondary', textDecoration: 'none' }}
+                    sx={{
+                      color: 'text.secondary',
+                      textDecoration: 'none',
+                      wordBreak: 'break-word',
+                      '&:hover': { color: 'primary.main' },
+                    }}
                   >
                     {item.label}
                   </Typography>
@@ -75,19 +80,30 @@ const Contact = () => {
               show component documentation familiarity.
             </Typography>
 
-            <Button
-              fullWidth
-              variant="contained"
-              startIcon={<DownloadIcon />}
-              href={profile.resumePath}
-              download
-              sx={{
-                background: 'linear-gradient(135deg, #6C63FF, #FF6584)',
-                '&:hover': { opacity: 0.9 },
-              }}
-            >
-              Download CV
-            </Button>
+            <Stack spacing={1.5}>
+              <Button
+                fullWidth
+                variant="contained"
+                startIcon={<DownloadIcon />}
+                href={profile.resumePath}
+                download
+                sx={{
+                  background: 'linear-gradient(135deg, #6C63FF, #FF6584)',
+                  '&:hover': { opacity: 0.9 },
+                }}
+              >
+                Download CV
+              </Button>
+              <Button
+                fullWidth
+                variant="outlined"
+                href={profile.portfolioUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open live portfolio
+              </Button>
+            </Stack>
           </Box>
         </Grid>
       </Grid>

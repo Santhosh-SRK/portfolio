@@ -29,7 +29,7 @@ const Footer = () => {
         MUI.
       </Typography>
 
-      <Box sx={{ display: 'flex', gap: 1 }}>
+      <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
         {socialLinks.map(({ icon, href, label }) => (
           <IconButton
             key={label}
@@ -43,6 +43,20 @@ const Footer = () => {
             {icon}
           </IconButton>
         ))}
+        <Typography
+          component="a"
+          href={profile.portfolioUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="body2"
+          sx={{
+            color: 'text.secondary',
+            textDecoration: 'none',
+            '&:hover': { color: 'primary.main' },
+          }}
+        >
+          Live portfolio
+        </Typography>
       </Box>
     </Box>
   );

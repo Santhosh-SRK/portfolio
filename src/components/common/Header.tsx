@@ -45,6 +45,7 @@ const Header = ({ themeMode, onToggleTheme }: HeaderProps) => {
             fontWeight={800}
             sx={{ color: 'primary.main', cursor: 'pointer' }}
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            aria-label="Scroll to top"
           >
             {profile.shortName}<span style={{ color: '#FF6584' }}>.</span>
           </Typography>
@@ -61,7 +62,7 @@ const Header = ({ themeMode, onToggleTheme }: HeaderProps) => {
                   {link}
                 </Button>
               ))}
-              <IconButton onClick={onToggleTheme} size="small" sx={{ ml: 1 }}>
+              <IconButton onClick={onToggleTheme} size="small" sx={{ ml: 1 }} aria-label="Toggle theme">
                 {themeMode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
               </IconButton>
             </Box>
@@ -70,10 +71,10 @@ const Header = ({ themeMode, onToggleTheme }: HeaderProps) => {
           {/* Mobile hamburger */}
           {isMobile && (
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-              <IconButton onClick={onToggleTheme} size="small">
+              <IconButton onClick={onToggleTheme} size="small" aria-label="Toggle theme">
                 {themeMode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
               </IconButton>
-              <IconButton onClick={() => setDrawerOpen(true)}>
+              <IconButton onClick={() => setDrawerOpen(true)} aria-label="Open navigation menu">
                 <MenuIcon />
               </IconButton>
             </Box>
@@ -89,7 +90,7 @@ const Header = ({ themeMode, onToggleTheme }: HeaderProps) => {
         PaperProps={{ sx: { width: 260, p: 2, backgroundColor: 'background.paper' } }}
       >
         <Box sx={{ display: 'flex', justifyContent: 'flex-end', mb: 2 }}>
-          <IconButton onClick={() => setDrawerOpen(false)}>
+          <IconButton onClick={() => setDrawerOpen(false)} aria-label="Close navigation menu">
             <CloseIcon />
           </IconButton>
         </Box>

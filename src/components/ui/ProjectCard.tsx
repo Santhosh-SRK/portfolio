@@ -40,6 +40,13 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         />
 
         <CardContent sx={{ flexGrow: 1 }}>
+          <Typography
+            variant="caption"
+            color="primary"
+            sx={{ display: 'inline-block', mb: 1, fontWeight: 700, letterSpacing: 0.6 }}
+          >
+            {project.category}
+          </Typography>
           <Typography variant="h6" fontWeight={700} gutterBottom>
             {project.title}
           </Typography>
