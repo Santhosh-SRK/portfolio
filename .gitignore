@@ -13,6 +13,7 @@ dist-ssr
 *.local
 storybook-static
 Santhosh-SRK
+budget-tracker-dashboard
 
 # Editor directories and files
 .vscode/*
