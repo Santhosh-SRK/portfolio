@@ -45,12 +45,12 @@ export const projects: Project[] = [
     id: '1',
     title: 'Budget Tracker Dashboard',
     description:
-      'Enterprise-style finance dashboard with KPI cards, planning controls, activity feed, and Recharts analytics powered by Zustand for clean scalable state flow.',
-    techStack: ['React', 'TypeScript', 'Zustand', 'Recharts', 'MUI'],
+      'Modern budget management dashboard built using Vue 3 Composition API and TypeScript. Designed with a scalable, feature-based architecture using Pinia for state management and Tailwind CSS for a clean, responsive UI. Implements core financial workflows including transaction tracking, filtering, real-time balance calculation, and session-based authentication — all handled fully on the frontend to simulate real product behavior.',
+    techStack: ['Vue 3', 'TypeScript', 'Pinia', 'Vue Router', 'Tailwind CSS', 'Vite'],
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
     githubUrl: 'https://github.com/Santhosh-SRK/budget-tracker-dashboard',
     liveUrl: 'https://santhosh-srk.github.io/budget-tracker-dashboard/',
-    category: 'React',
+    category: 'Vue',
     featured: true,
   },
   {
