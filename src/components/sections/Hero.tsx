@@ -46,8 +46,6 @@ const Hero = () => {
       >
         <Box sx={{ flex: 1 }}>
           <motion.div {...fadeUp(0.1)}>
-
-          <motion.div {...fadeUp(0.2)}>
             <Typography
               variant="h1"
               sx={{ fontSize: { xs: '2.8rem', md: '4.2rem' }, lineHeight: 1.08, my: 1.5 }}
