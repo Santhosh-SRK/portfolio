@@ -28,9 +28,6 @@ const SectionWrapper = ({ id, title, subtitle, children, ...rest }: SectionWrapp
       >
         {/* Section heading */}
         <Box sx={{ mb: 6, textAlign: 'center' }}>
-          <Typography variant="overline" color="primary" fontWeight={700} letterSpacing={3}>
-            {id.toUpperCase()}
-          </Typography>
           <Typography variant="h3" fontWeight={700} sx={{ mt: 1 }}>
             {title}
           </Typography>

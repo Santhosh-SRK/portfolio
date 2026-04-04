@@ -13,7 +13,7 @@ const About = () => {
       subtitle="A clean snapshot of the skills and mindset I bring to frontend teams."
       sx={{ backgroundColor: 'background.paper' }}
     >
-      <Grid container spacing={6}>
+      <Grid container spacing={6} sx={{ maxWidth: 1200, mx: 'auto' }}>
         <Grid size={{ xs: 12, md: 5 }}>
           <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
             {profile.summary}
