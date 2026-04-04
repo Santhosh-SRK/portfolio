@@ -60,7 +60,7 @@ export const projects: Project[] = [
       'Developer networking concept inspired by swipe-based matching. Currently in project planning while I continue exploring Node.js, Express, and MongoDB for the backend direction.',
     techStack: ['React', 'Node.js (Exploring)', 'Express', 'MongoDB', 'Planning'],
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&q=80',
-    githubUrl: 'https://github.com/Santhosh-SRK',
+    githubUrl: 'https://github.com/Santhosh-SRK/portfolio',
     liveUrl: '',
     category: 'Full Stack',
     featured: true,

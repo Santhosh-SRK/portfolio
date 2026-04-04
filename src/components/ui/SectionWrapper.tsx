@@ -17,7 +17,7 @@ const SectionWrapper = ({ id, title, subtitle, children, ...rest }: SectionWrapp
     <Box
       id={id}
       component="section"
-      sx={{ py: { xs: 8, md: 12 }, px: { xs: 3, md: 8 }, ...rest.sx }}
+      sx={{ py: { xs: 8, md: 12 }, px: { xs: 2, md: 12 }, ...rest.sx }}
       {...rest}
     >
       <motion.div

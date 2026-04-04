@@ -46,10 +46,6 @@ const Hero = () => {
       >
         <Box sx={{ flex: 1 }}>
           <motion.div {...fadeUp(0.1)}>
-            <Typography variant="overline" color="primary" fontWeight={700} letterSpacing={3}>
-              FRONTEND PORTFOLIO
-            </Typography>
-          </motion.div>
 
           <motion.div {...fadeUp(0.2)}>
             <Typography
