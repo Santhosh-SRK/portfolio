@@ -6,7 +6,7 @@ export interface Project {
   image: string;
   githubUrl?: string;
   liveUrl?: string;
-  category: 'React' | 'Angular' | 'Vue' | 'Full Stack';
+  category: 'React' | 'Angular' | 'Vue' | 'Full Stack' | 'Library' | 'Tooling';
   featured: boolean;
 }
 

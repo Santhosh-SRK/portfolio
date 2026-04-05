@@ -54,17 +54,17 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: '2',
-    title: 'Bug Buddy',
-    description:
-      'Developer networking concept inspired by swipe-based matching. Currently in project planning while I continue exploring Node.js, Express, and MongoDB for the backend direction.',
-    techStack: ['React', 'Node.js (Exploring)', 'Express', 'MongoDB', 'Planning'],
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&q=80',
-    githubUrl: 'https://github.com/Santhosh-SRK',
-    liveUrl: '',
-    category: 'Full Stack',
-    featured: true,
-  },
+  id: '2',
+  title: 'Reusable Data Table Library',
+  description:
+    'A fully reusable, production-ready data table library built with Angular and designed for scalability across enterprise applications. The library supports dynamic column rendering, pagination, sorting, CSV/Excel export, and customizable templates. It was packaged as an independent npm module and integrated into a Vite-powered demo application for performance validation and real-world usage simulation. Focused on clean architecture, reusability, and developer experience.',
+  techStack: ['Angular', 'TypeScript', 'RxJS', 'Angular Material', 'Vite (Demo)', 'npm Packaging'],
+  image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80',
+  githubUrl: 'https://github.com/Santhosh-SRK/reusable-table',
+  liveUrl: 'https://santhosh-srk.github.io/reusable-table/',
+  category: 'Library',
+  featured: true,
+},
 ];
 
 export const experiences: Experience[] = [
